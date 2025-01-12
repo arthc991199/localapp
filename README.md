@@ -30,6 +30,7 @@ docelowo:
 inne?
 
 
+
 Dokumentacja projektu: Aplikacja wydarzeń lokalnych ISSA
 Cel aplikacji
 Aplikacja ma za zadanie umożliwić użytkownikom przeglądanie najbliższych wydarzeń w wybranym mieście, wyświetlać szczegóły wydarzenia (data, godzina, miejsce, agenda) oraz zapewnić możliwość dodania aplikacji do ekranu głównego jako PWA (Progressive Web App).
