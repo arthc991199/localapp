@@ -29,7 +29,10 @@ docelowo:
 -uycie profilu uczestnika do zarejestrowania się na evencie
 inne?
 
-
+w pliku index.html
+    <script defer src="app8.js"></script>
+odwołuje się do .js
+tworzenie nowych js jest wymuszone cache w stronie, który nie pozwala na skuteczną edycję samego js.
 
 ***Dokumentacja projektu: Aplikacja wydarzeń lokalnych ISSA***
 Cel aplikacji
