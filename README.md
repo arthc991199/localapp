@@ -31,14 +31,14 @@ inne?
 
 
 
-Dokumentacja projektu: Aplikacja wydarzeń lokalnych ISSA
+***Dokumentacja projektu: Aplikacja wydarzeń lokalnych ISSA***
 Cel aplikacji
 Aplikacja ma za zadanie umożliwić użytkownikom przeglądanie najbliższych wydarzeń w wybranym mieście, wyświetlać szczegóły wydarzenia (data, godzina, miejsce, agenda) oraz zapewnić możliwość dodania aplikacji do ekranu głównego jako PWA (Progressive Web App).
 
 Struktura projektu
 Aplikacja składa się z następujących komponentów:
 
-1. Pliki HTML, CSS i JavaScript
+**1. Pliki HTML, CSS i JavaScript**
 index.html:
 
 Strona główna aplikacji.
@@ -55,18 +55,18 @@ Zawiera style responsywne, zapewniając czytelność aplikacji na urządzeniach 
 Definiuje wygląd przycisków miasta, sekcji wydarzenia i nagłówków.
 app.js:
 
-Główna logika aplikacji.
+***Główna logika aplikacji.***
 Obsługuje:
 Wybór miasta przez użytkownika.
 Pobieranie danych RSS dla wybranego miasta.
 Parsowanie danych wydarzenia (data, miejsce, agenda).
 Zapisywanie wyboru miasta w Local Storage.
 Obsługę błędów i brakujących danych.
-2. Ikony aplikacji
+**2. Ikony aplikacji**
 favicon.png: Ikona wyświetlana na pasku przeglądarki.
 icon-192x192.png: Ikona aplikacji w rozdzielczości 192x192, używana w PWA.
 icon-512x512.png: Ikona aplikacji w rozdzielczości 512x512, używana w PWA.
-3. Manifest aplikacji
+**3. Manifest aplikacji**
 manifest.json:
 Plik definiujący parametry PWA, m.in.:
 Nazwę aplikacji (name, short_name).
@@ -74,7 +74,7 @@ Ikony aplikacji (icons).
 Startowy URL aplikacji (start_url).
 Tryb wyświetlania (display: standalone).
 Kolory motywu (theme_color) i tła (background_color).
-4. Service Worker
+**4. Service Worker**
 service-worker.js:
 Obsługuje cache'owanie zasobów aplikacji dla poprawy wydajności.
 Zapewnia możliwość działania aplikacji offline (jeśli dodano taką funkcję).
@@ -123,7 +123,7 @@ Skopiuj kod
         <span class="tribe-locality">Wrocław</span>
     </description>
 </item>
-Parsowane dane:
+**Parsowane dane:**
 
 Tytuł wydarzenia: <title>
 Data i godzina: <pubDate>
@@ -139,6 +139,7 @@ Konfiguracja serwera:
 
 Upewnij się, że pliki aplikacji są umieszczone w katalogu z dostępem HTTPS.
 Zainstaluj pliki ikon (favicon.png, icon-192x192.png, icon-512x512.png) w katalogu aplikacji.
+**-brak plików obecnie**
 Modyfikacja miast:
 
 Lista miast znajduje się w obiekcie cities w pliku app.js.
@@ -149,7 +150,7 @@ Sprawdź działanie PWA w przeglądarkach (Chrome, Safari).
 Przetestuj, czy dane z RSS są poprawnie pobierane i wyświetlane.
 Debugowanie:
 
-Użyj console.log w kodzie, aby monitorować:
+**Użyj console.log w kodzie, aby monitorować:**
 Zawartość description w RSS.
 Wynik parsowania miejsca i agendy.
 Problemy z Local Storage.
