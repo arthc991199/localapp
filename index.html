@@ -6,16 +6,24 @@
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
     <title>Wybierz miasto</title>
-    <script defer src="app8.js"></script>
-        <!-- Matomo --><script>
-var _paq = window._paq = window._paq || [];
-_paq.push(['enableJSErrorTracking']);
-_paq.push(['trackAllContentImpressions']);_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);_paq.push(['alwaysUseSendBeacon']);_paq.push(['setTrackerUrl', "\/\/local.issa.org.pl\/wp-content\/plugins\/matomo\/app\/matomo.php"]);_paq.push(['setSiteId', '1']);var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-g.type='text/javascript'; g.async=true; g.src="\/\/local.issa.org.pl\/wp-content\/uploads\/matomo\/matomo.js"; s.parentNode.insertBefore(g,s);
-</script>
-<!-- End Matomo Code -->
-<link rel="apple-touch-icon" href="icon-200x200.jpg">
+    <script defer src="app9.js"></script>
 
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        _paq.push(['enableJSErrorTracking']);
+        _paq.push(['trackAllContentImpressions']);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        _paq.push(['alwaysUseSendBeacon']);
+        _paq.push(['setTrackerUrl', "/wp-content/plugins/matomo/app/matomo.php"]);
+        _paq.push(['setSiteId', '1']);
+        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript'; g.async = true; g.src = "/wp-content/uploads/matomo/matomo.js"; s.parentNode.insertBefore(g, s);
+    </script>
+    <!-- End Matomo Code -->
+
+    <link rel="apple-touch-icon" href="icon-200x200.jpg">
 </head>
 <body>
     <div id="app-container">
@@ -62,7 +70,7 @@ g.type='text/javascript'; g.async=true; g.src="\/\/local.issa.org.pl\/wp-content
         <!-- Instrukcja dodawania aplikacji -->
         <div id="install-instructions">
             <h2>Jak dodać aplikację na pulpit?</h2>
-            <div class="instruction-section">
+            <div class="instruction-section" id="android-instructions">
                 <p><strong>Dla użytkowników Androida (przeglądarka Chrome):</strong></p>
                 <ol class="instruction-list">
                     <li>Otwórz stronę w przeglądarce Chrome.</li>
@@ -71,7 +79,7 @@ g.type='text/javascript'; g.async=true; g.src="\/\/local.issa.org.pl\/wp-content
                     <li>Potwierdź, naciskając <strong>Dodaj</strong>.</li>
                 </ol>
             </div>
-            <div class="instruction-section">
+            <div class="instruction-section" id="ios-instructions">
                 <p><strong>Dla użytkowników iOS (przeglądarka Safari):</strong></p>
                 <ol class="instruction-list">
                     <li>Otwórz stronę w przeglądarce Safari.</li>
