@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles3.css">
     <title>Wybierz miasto</title>
     <script defer src="app9.js"></script>
 
@@ -30,13 +30,8 @@
         <!-- Nagłówek -->
         <header>
             <h1>Wybierz swoje miasto</h1>
-            <p class="beta-info">Wersja beta aplikacji</p>
+            <p class="beta-info">Wersja 0.8 beta aplikacji</p>
         </header>
-
-        <!-- Obrazek -->
-        <div id="main-image">
-            <img src="ISSA Polska local 1600.png" alt="ISSA Polska" />
-        </div>
 
         <!-- Wybór miasta -->
         <div id="city-selector">
@@ -57,6 +52,36 @@
             </div>
         </div>
 
+                <!-- Instrukcja dodawania aplikacji -->
+                <div id="install-instructions">
+                    <h2>Jak dodać aplikację na pulpit telefonu?</h2>
+                            <!-- Obrazek -->
+        <div id="main-image">
+            <img src="ISSA Polska local 1600.png" alt="ISSA Polska" />
+        </div>
+                    <details>
+        
+                    <div class="instruction-section" id="android-instructions">
+                        <p><strong>Dla użytkowników Androida (przeglądarka Chrome):</strong></p>
+                        <ol class="instruction-list">
+                            <li>Otwórz stronę w przeglądarce Chrome.</li>
+                            <li>Dotknij ikonę <strong>trzech kropek</strong> w prawym górnym rogu.</li>
+                            <li>Wybierz opcję <strong>Dodaj do ekranu głównego</strong>.</li>
+                            <li>Potwierdź, naciskając <strong>Dodaj</strong>.</li>
+                        </ol>
+                    </div>
+                    <div class="instruction-section" id="ios-instructions">
+                        <p><strong>Dla użytkowników iOS (przeglądarka Safari):</strong></p>
+                        <ol class="instruction-list">
+                            <li>Otwórz stronę w przeglądarce Safari.</li>
+                            <li>Dotknij ikony <strong>udostępniania</strong> (kwadrat z strzałką w górę).</li>
+                            <li>Przewiń w dół i wybierz opcję <strong>Dodaj do ekranu początkowego</strong>.</li>
+                            <li>Wpisz nazwę aplikacji i dotknij <strong>Dodaj</strong>.</li>
+                        </ol>
+                    </div>
+                    <p>Po wykonaniu tych kroków aplikacja pojawi się na Twoim pulpicie jako ikona. Możesz z niej korzystać jak z natywnej aplikacji!</p>
+                </details>
+            </div>
         <!-- Informacje o wydarzeniu -->
         <div id="event-info" style="display: none;">
             <h2>Najbliższe wydarzenie to</h2>
@@ -67,29 +92,6 @@
             <button id="change-city" style="margin-top: 20px;">Zmień miasto</button>
         </div>
 
-        <!-- Instrukcja dodawania aplikacji -->
-        <div id="install-instructions">
-            <h2>Jak dodać aplikację na pulpit?</h2>
-            <div class="instruction-section" id="android-instructions">
-                <p><strong>Dla użytkowników Androida (przeglądarka Chrome):</strong></p>
-                <ol class="instruction-list">
-                    <li>Otwórz stronę w przeglądarce Chrome.</li>
-                    <li>Dotknij ikonę <strong>trzech kropek</strong> w prawym górnym rogu.</li>
-                    <li>Wybierz opcję <strong>Dodaj do ekranu głównego</strong>.</li>
-                    <li>Potwierdź, naciskając <strong>Dodaj</strong>.</li>
-                </ol>
-            </div>
-            <div class="instruction-section" id="ios-instructions">
-                <p><strong>Dla użytkowników iOS (przeglądarka Safari):</strong></p>
-                <ol class="instruction-list">
-                    <li>Otwórz stronę w przeglądarce Safari.</li>
-                    <li>Dotknij ikony <strong>udostępniania</strong> (kwadrat z strzałką w górę).</li>
-                    <li>Przewiń w dół i wybierz opcję <strong>Dodaj do ekranu początkowego</strong>.</li>
-                    <li>Wpisz nazwę aplikacji i dotknij <strong>Dodaj</strong>.</li>
-                </ol>
-            </div>
-            <p>Po wykonaniu tych kroków aplikacja pojawi się na Twoim pulpicie jako ikona. Możesz z niej korzystać jak z natywnej aplikacji!</p>
-        </div>
         
         <!-- Stopka -->
         <footer>
