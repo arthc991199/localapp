@@ -1,6 +1,6 @@
 {
     "name": "Wybierz Miasto - ISSA Events",
-    "short_name": "ISSA Events",
+    "short_name": "ISSA local",
     "start_url": "./index.html",
     "display": "standalone",
     "background_color": "#ffffff",
