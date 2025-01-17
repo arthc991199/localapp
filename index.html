@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles3.css">
+
+    <link id="theme-stylesheet" rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+
     <title>Wybierz miasto</title>
     <script defer src="app9.js"></script>
 
@@ -29,10 +33,15 @@
     <div id="app-container">
         <!-- Nagłówek -->
         <header>
-            <h1>Wybierz swoje miasto</h1>
-            <p class="beta-info">Wersja 0.8 beta aplikacji</p>
-        </header>
+            <h1>_ ISSA EVENTS Wybierz swoje miasto <span class="blinking">_</span></h1>
 
+            <h1></h1>
+            <p class="beta-info">Wersja 0.8 beta aplikacji</p>
+            
+        </header>
+        <div id="theme-switcher" style="text-align: right; margin: 10px;">
+            <button id="switch-theme-btn">Zmień na skórkę hakerską</button>
+        </div>
         <!-- Wybór miasta -->
         <div id="city-selector">
             <h2>Miasta:</h2>
@@ -102,5 +111,33 @@
             </ul>
         </footer>
     </div>
+    <script>
+
+document.addEventListener("DOMContentLoaded", () => {
+    const themeButton = document.getElementById("switch-theme-btn");
+    const themeStylesheet = document.getElementById("theme-stylesheet");
+
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+        themeStylesheet.setAttribute("href", savedTheme);
+        themeButton.textContent = savedTheme === "styles.css" ? "Zmień na skórkę hakerską" : "Zmień na skórkę klasyczną";
+    }
+
+    themeButton.addEventListener("click", () => {
+        const currentTheme = themeStylesheet.getAttribute("href");
+
+        if (currentTheme === "styles.css") {
+            themeStylesheet.setAttribute("href", "hacker2.css");
+            themeButton.textContent = "Zmień na skórkę klasyczną";
+            localStorage.setItem("theme", "hacker2.css");
+        } else {
+            themeStylesheet.setAttribute("href", "styles.css");
+            themeButton.textContent = "Zmień na skórkę hakerską";
+            localStorage.setItem("theme", "styles.css");
+        }
+    });
+});
+
+    </script>
 </body>
 </html>
